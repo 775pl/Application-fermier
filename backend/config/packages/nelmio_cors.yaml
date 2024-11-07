@@ -1,0 +1,8 @@
+nelmio_cors:
+    defaults:
+        allow_credentials: false
+        allow_origin: ['http://localhost:8081']  # Remplace par l'URL de ton frontend Vue.js
+        allow_headers: ['Content-Type', 'Authorization', 'X-Requested-With']
+        allow_methods: ['GET', 'POST', 'PUT', 'DELETE', 'OPTIONS']
+    paths:
+        '^/api/': ~  # Autorise les requêtes CORS pour toutes les routes commençant par '/api/'

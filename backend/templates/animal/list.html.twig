@@ -1,0 +1,21 @@
+{# templates/animal/list.html.twig #}
+
+<h1>Liste des Animaux à acheter</h1>
+
+<ul>
+    {% for animal in animals %}
+        <li>
+            <strong>Nom :</strong> {{ animal.name }}<br>
+            <strong>Âge :</strong> {{ animal.age }} ans<br>
+            <strong>Type :</strong> {{ animal.type }}<br>
+            <strong>Race :</strong> {{ animal.breed }}<br>
+            <strong>Description :</strong> {{ animal.description }}<br>
+            <strong>Prix TTC :</strong> {{ animal.priceHT | number_format(2, ',', ' ') }} €<br>
+            <strong>Photos :</strong> <br>
+            <img src="{{ animal.photos }}" alt="Photo de {{ animal.name }}" style="max-width: 200px; height: auto;">
+        </li>
+        <hr>
+    {% else %}
+        <li>Aucun animal trouvé.</li>
+    {% endfor %}
+</ul>
