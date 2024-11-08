@@ -47,9 +47,10 @@ Temps estimé pour chaque étape
 Création du projet Symfony		=>	15 minutes
 Configuration de la base de données	=>	10 minutes
 Installation de Vue.js et Tailwind	=>	20 minutes
-Mise en place des entités et API	=>	50 minutes
+Mise en place des entités et API	=>	30 minutes
 Création du front Vue.js		=>	50 minutes
 Intégration du front et du backend	=>	15 minutes
+Création de la commande createuser	=>	20 minutes
 Tests et validation			=>	30 minutes
 
 Total = 3h15
