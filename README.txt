@@ -54,3 +54,22 @@ Création de la commande createuser	=>	20 minutes
 Tests et validation			=>	30 minutes
 
 Total = 3h15
+
+
+
+
+
+
+
+
+
+
+
+Améliorations possibles
+-------------------------
+Sécurité
+-----------
+
+Validation des entrées utilisateur : Ajouter des validations strictes pour toutes les données envoyées via les formulaires afin de prévenir les injections SQL.
+
+Authentification : Mettre en place un système d’authentification pour le back-office afin de limiter l’accès aux seuls utilisateurs autorisés. Symfony propose un composant Security qui peut être configuré pour cela.
