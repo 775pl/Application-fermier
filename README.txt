@@ -16,7 +16,7 @@ composer install
 
 
 - Configuration de la base de données
-Dans le fichier .env, configurez l'URL de la base de données (par exemple pour XAMPP : DATABASE_URL="mysql://root:@127.0.0.1:3306/animal").
+Dans le fichier .env, configurez l'URL de la base de données (par exemple pour XAMPP : DATABASE_URL="mysql://root:@127.0.0.1:3306/betail").
 php bin/console doctrine:database:create
 php bin/console make:migration
 php bin/console doctrine:migrations:migrate
@@ -73,3 +73,10 @@ Sécurité
 Validation des entrées utilisateur : Ajouter des validations strictes pour toutes les données envoyées via les formulaires afin de prévenir les injections SQL.
 
 Authentification : Mettre en place un système d’authentification pour le back-office afin de limiter l’accès aux seuls utilisateurs autorisés. Symfony propose un composant Security qui peut être configuré pour cela.
+
+
+
+Remarques de sécurité
+Pour cet exercice, toutes les informations sensibles, comme les identifiants de base de données, ont été laissées en dur dans le code pour simplifier l'installation et la configuration.
+
+En situation réelle, ces informations devraient être stockées dans un fichier .env ou d'autres variables d'environnement sécurisées. Cela permet de protéger les informations sensibles et de faciliter la configuration sur différents environnements, sans risque d'exposition sur un dépôt public comme GitHub.
